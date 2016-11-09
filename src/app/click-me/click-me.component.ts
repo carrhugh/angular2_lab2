@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./click-me.component.css']
 })
 export class ClickMeComponent implements OnInit {
-
+clickMessage: string = "";
   constructor() { }
-
+onClick(){
+  this.clickMessage = "You clicked the button!";
+}
   ngOnInit() {
   }
 
